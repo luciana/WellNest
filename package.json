@@ -1,0 +1,51 @@
+{
+  "name": "gatsby-starter-kontent",
+  "version": "1.1.2",
+  "description": "Gatsby starter site with Kentico kontent",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kentico/gatsby-starter-kontent"
+  },
+  "keywords": [
+    "gatsby",
+    "Gatsby",
+    "kentico-kontent",
+    "Kentico Kontent",
+    "caas",
+    "starter",
+    "Starter"
+  ],
+  "author": "NNDev",
+  "license": "MIT",
+  "dependencies": {
+    "browser-monads": "^1.0.0",
+    "firebase": "^7.13.2",
+    "gatsby": "^2.18.0",
+    "gatsby-plugin-manifest": "^2.2.44",
+    "gatsby-plugin-material-ui": "^2.1.6",
+    "gatsby-plugin-offline": "^3.0.37",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sass": "^2.1.20",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-google": "^0.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-hooks": "^2.5.0"
+  }
+}
