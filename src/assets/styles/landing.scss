@@ -125,7 +125,7 @@
     }
 
     @include from($tablet) {
-        padding-left: 10rem;
+        padding-left: 2rem;
         top: 950px;
         width: 100%;
     }
@@ -134,8 +134,21 @@
         padding-left: 2rem;
     }
 
-}
+    .thumbnail {
+        margin: 10px;
+    }
 
-.thumbnail {
-    margin: 10px;
+    @include from($tablet) {
+        .row {
+            width: 750px;
+            ;
+        }
+    }
+
+    @include from($desktop) {
+        .row {
+            width: 90%;
+            ;
+        }
+    }
 }

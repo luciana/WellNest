@@ -48,14 +48,19 @@ const Index = () => {
 						<button className="button is-info is-outlined">Hang Up</button>
 					</div>
 				</div>
-				<div className="tile is-ancestor is-12">
-					<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
-					<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
-					<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
-					<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
-					<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
-					<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+				<div className="content is-ancestor is-12 is-vertical">
+					<div className="row tile is-horizontal">
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+					</div>
+					<br></br>
+					<div className="row tile is-horizontal">
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
+						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
 
+					</div>
 				</div>
 			</div>
 		</>
