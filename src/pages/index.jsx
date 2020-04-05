@@ -6,10 +6,6 @@ import '../assets/styles/style.scss'
 
 import avatarImage from '../assets/images/avatar.svg'
 
-
-import Thumbnail from '../components/Thumbnail'
-import thumbnailImage from '../assets/images/thumbnails/thumb1.png'
-
 const Index = () => {
 	return (
 	<>
@@ -28,7 +24,7 @@ const Index = () => {
 			</div>
 		</div>
 	</>
-)
+	)
 }
 
 export default Index
