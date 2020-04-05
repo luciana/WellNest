@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
+import { Link } from "gatsby"
 import { Helmet } from 'react-helmet'
 import SideNav from '../components/SideNav'
 import Button from '../components/Button'
@@ -58,16 +59,16 @@ const Index = () => {
 					</div>
 					<div className="content is-ancestor is-12 is-vertical">
 						<div className="row tile is-horizontal">
-							<div className="thumbnail tile"><Thumbnail image={thumbnailImage1} /></div>
-							<div className="thumbnail tile"><Thumbnail image={thumbnailImage2} /></div>
+							<div className="thumbnail tile"><Link to="/class/"><Thumbnail image={thumbnailImage1} /></Link></div>
+							<div className="thumbnail tile"><Link to="/class/"><Thumbnail image={thumbnailImage2} /></Link></div>
 						</div>
 						<div className="row tile is-horizontal">
-							<div className="thumbnail tile"><Thumbnail image={thumbnailImage3} /></div>
-							<div className="thumbnail tile"><Thumbnail image={thumbnailImage4} /></div>
+							<div className="thumbnail tile"><Link to="/class/"><Thumbnail image={thumbnailImage3} /></Link></div>
+							<div className="thumbnail tile"><Link to="/class/"><Thumbnail image={thumbnailImage4} /></Link></div>
 						</div>
 						<div className="row tile is-horizontal">
-							<div className="thumbnail tile"><Thumbnail image={thumbnailImage5} /></div>
-							<div className="thumbnail tile"><Thumbnail image={thumbnailImage6} /></div>
+							<div className="thumbnail tile"><Link to="/class/"><Thumbnail image={thumbnailImage5} /></Link></div>
+							<div className="thumbnail tile"><Link to="/class/"><Thumbnail image={thumbnailImage6} /></Link></div>
 						</div>
 					</div>
 				</div>
