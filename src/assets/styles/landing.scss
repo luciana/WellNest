@@ -5,6 +5,7 @@
     @include until($tablet) {
         align-items: flex-start;
     }
+
     @include from($tablet) {
         background: url('../images/background/bg-screen-sml.jpg');
         background-repeat: no-repeat;
@@ -34,7 +35,7 @@
 
     .image {
         @include until($tablet) {
-        width: 200px
+            width: 310px
         }
     }
 
@@ -56,7 +57,10 @@
             margin: 2rem 0;
 
             .button {
-                min-width: 200px;
+                min-width: 140px;
+                font-weight: 500;
+                text-transform: uppercase;
+                text-align: center;
 
                 &:first-of-type {
                     // flex: 1 1 0px;
@@ -64,6 +68,26 @@
                 }
             }
         }
+
+        @include until($tablet) {
+            .button {
+                border-radius: 4px;
+            }
+
+            .buttons {
+                width: 320px;
+            }
+        }
+
+        @include from($tablet) {
+            .button {
+                min-width: 200px;
+                padding: 1.5rem;
+                border-radius: 4px;
+            }
+        }
+
+
 
         p {
             font-style: italic;
