@@ -13,19 +13,19 @@
 
     width: 100%;
     min-height: 100vh;
-
-    @include until($tablet) {
-        padding-left: 5rem;
-    }
-
-    @include from($tablet) {
-        padding-left: 10rem;
-    }
-
-    @include from($desktop) {
-        padding-left: 20rem;
-    }
-
+    
+    
+        @include until($tablet) {
+            padding-left: 5rem;
+        }
+    
+        @include from($tablet) {
+            padding-left: 10rem;
+        }
+    
+        @include from($desktop) {
+            padding-left: 20rem;
+        }
     .image {
         @include until($tablet) {
             width: 310px
@@ -50,7 +50,6 @@
             margin: 2rem 0;
 
             .button {
-                min-width: 140px;
                 font-weight: 500;
                 text-transform: uppercase;
                 text-align: center;
@@ -64,6 +63,7 @@
 
         @include until($tablet) {
             .button {
+                min-width: 140px;
                 border-radius: 4px;
             }
 
@@ -74,7 +74,7 @@
 
         @include from($tablet) {
             .button {
-                min-width: 200px;
+                min-width: 220px;
                 padding: 1.5rem;
                 border-radius: 4px;
             }
@@ -97,4 +97,21 @@
             }
         }
     }
+}
+.video-grid {
+    display:block;
+    width: 100%;
+    padding-top: -120px;
+    margin-top: 20px;
+@include until($tablet) {
+    padding-left: 5rem;
+}
+
+@include from($tablet) {
+    padding-left: 10rem;
+}
+
+@include from($desktop) {
+    padding-left: 20rem;
+}
 }

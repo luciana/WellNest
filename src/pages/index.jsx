@@ -36,14 +36,23 @@ const Index = () => {
 					</div>
 					<p>You are never alone. Happy, healthy,<br /> connected Wellness with WellNest.</p>
 				</div>
-			</div>
-			<div className="video-grid">
-				<div class="section">
-					<div class=" buttons are-small" >
-						<span className="button is-info"><Button>Open Cam</Button></span>
-						<span className="button is-info"><Button>Open Mic</Button></span>
-						<span className="button is-info is-outlined"><Button>Join Room</Button></span>
-						<span className="button is-info is-outlined"><Button>Hang Up</Button></span>
+				<div className="video-grid">
+					<div class="level">
+						<div class=" buttons are-small" >
+							<span className="button is-info"><Button>Open Cam</Button></span>
+							<span className="button is-info"><Button>Open Mic</Button></span>
+							<span className="button is-info is-outlined"><Button>Join Room</Button></span>
+							<span className="button is-info is-outlined"><Button>Hang Up</Button></span>
+						</div>
+					</div>
+					<div className="tile is-ancestor is-12">
+						<Thumbnail className="tile" image={heroImage} />
+						<Thumbnail className="tile" image={heroImage} />
+						<Thumbnail className="tile" image={heroImage} />
+						<Thumbnail className="tile" image={heroImage} />
+						<Thumbnail className="tile" image={heroImage} />
+						<Thumbnail className="tile" image={heroImage} />
+
 					</div>
 				</div>
 			</div>
