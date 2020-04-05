@@ -12,6 +12,8 @@ import Search from '../components/Search'
 import Thumbnail from '../components/Thumbnail'
 import thumbnailImage from '../assets/images/thumbnails/thumb1.png'
 
+import Leaderboard from '../components/Leaderboard'
+
 const Index = () => {
 	return (
 		<>
@@ -58,6 +60,7 @@ const Index = () => {
 					</div>
 				</div> */}
 			</div>
+			<Leaderboard />
 		</>
 	)
 }
