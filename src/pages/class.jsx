@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from 'react'
+import React from 'react'
 import {Helmet} from 'react-helmet'
 import SideNav from '../components/SideNav'
 import Button from '../components/Button'
