@@ -1,0 +1,38 @@
+.landing {
+    display: flex;
+    align-items: center;
+    background: url('../images/background/bg.png');
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 20rem;
+
+    .content {
+        h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+        }
+
+        .buttons {
+            display: flex;
+            margin: 2rem 0;
+
+            .button {
+                min-width: 200px;
+
+                &:first-of-type {
+                    // flex: 1 1 0px;
+                    margin-right: 2rem;
+                }
+            }
+        }
+
+        p {
+            font-size: 1.125rem;
+            color: $purple;
+            letter-spacing: 0.5px;
+            line-height: 24px;
+            font-style: italic;
+        }
+    }
+}

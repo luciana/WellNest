@@ -1,0 +1,37 @@
+// Imports
+// Variables
+@import "./variables/colors.scss";
+@import "./variables/fonts.scss";
+@import "./variables/displays.scss";
+
+// Pages
+@import "./landing.scss";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-text;
+    color: $black;
+
+    * {
+        box-sizing: border-box;
+    }
+    
+    ::before, ::after {
+        box-sizing: border-box;
+    }
+    
+    ul, li {
+        list-style: none;
+        padding-inline-start: 0%;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: $font-heading;
+    }
+}

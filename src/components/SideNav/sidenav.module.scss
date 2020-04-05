@@ -1,0 +1,163 @@
+@import "../../assets/styles/variables/colors.scss";
+@import "../../assets/styles/variables/fonts.scss";
+@import "../../assets/styles/variables/displays.scss";
+
+.SideNav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: $lightblue;
+    padding: 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 5px #E5E9F2;
+    transition: all 0.15s ease-in-out;
+    height: 100vh;
+
+    .Top {
+        .Avatar {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .Logo {
+            display: none;
+        }
+
+        .Nav {
+            display: flex;
+            margin-top: 8rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all 0.15s ease-in-out;
+
+            .Item {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 1rem;
+                cursor: pointer;
+
+                .Icon {
+                    display: flex;
+                    justify-content: center;
+                    width: 40px;
+                }
+
+                .Text {
+                    display: none;
+                    margin-left: 2rem;
+                    font-weight: 500;
+                    font-size: 0.9rem;
+                    transition: all 0.15s ease-in-out;
+                }
+
+            }
+        }
+    }
+
+    .Bottom {
+
+        .Button {
+            content: '';
+            background: #0083C2;
+            padding: 1rem;
+            border-radius: 50%;
+            cursor: pointer;
+            
+            &::after {
+                display: block;
+                content: '';
+                background: #F5F6FA;
+                width: 10px;
+                height: 10px;
+                clip-path: polygon(0 33%, 33% 33%, 33% 0, 66% 0, 66% 33%, 100% 33%, 100% 66%, 66% 66%, 66% 100%, 33% 100%, 33% 66%, 0 66%);
+            }
+        }
+
+        .Logout {
+            display: none;
+            align-items: center;
+            cursor: pointer;
+
+            .Icon {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .Text {
+                display: none;
+                margin-left: 2rem;
+                font-weight: 500;
+                font-size: 0.9rem;
+            }
+
+            &:hover {
+                .Text {
+                    color: $orange;
+                }
+            }
+        }
+    }
+}
+
+.Expanded {
+    @extend .SideNav;
+    min-width: 286px;
+    align-items: flex-start;
+
+    .Top {
+        .Avatar {
+            display: none;
+        }
+
+        .Logo {
+            display: flex;
+            align-items: center;
+            margin-top: 2rem;
+            margin-left: 2rem;
+        }
+
+        .Nav {
+            margin-left: 0.70rem;
+            align-items: flex-start;
+            width: 100%;
+
+            .Item {
+                justify-content: flex-start;
+                margin-left: 1.7rem;
+                width: 100%;
+
+                .Text {
+                    display: block;
+                }
+
+                &:hover {
+                    border-right: 3px solid $orange;
+
+                    .Text {
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+
+    .Bottom {
+        .Button {
+            display: none;
+        }
+        .Logout {
+            margin-left: 1.7rem;
+            display: flex;
+
+            .Text {
+                display: block;
+            }
+        }
+    }
+}
