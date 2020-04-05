@@ -6,6 +6,9 @@ yarn-debug.log*
 yarn-error.log*
 firebase-debug.log*
 
+# build cache 
+.cache/
+
 # Firebase cache
 .firebase/
 
@@ -67,3 +70,4 @@ node_modules/
 .idea
 
 .env.development
+.DS_Store

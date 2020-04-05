@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+// $blue: #366897;
+// $lightblue: #F5F6FA;
+// $black: #121B25;
+// $white: #ffffff;
+// $gray: #ECECEC;
+// $background: #F6F6F6;
+// $shadow: #000000;
+// $dark-gray: #4A4B50;
+// $dark: #373735;
+// $brown: #975936;
+// $orange: #CB3725;
+// $red: #E33E5A;
+// $purple: #94378E;
+
+
+// 1. Import the initial variables
+@import "../bulma/sass/utilities/initial-variables";
+@import "./variables/colors.scss";
+@import "./variables/fonts.scss";
+@import "./variables/displays.scss";
+
+// 2. Set your own initial variables
+// Update the sans-serif font family
+$family-sans-serif: $font-text;
+
+$blue: #0085B7;
+// 3. Set the derived variables
+$primary:$red;
+$primary-invert: $white;
+$info: $blue;
+
+
+// 4. Import the rest of Bulma
+// @import "../bulma/bulma";
+// can import only specific modules via:
+@import "../bulma/sass/utilities/_all";
+@import "../bulma/sass/base/_all";
+@import "../bulma/sass/elements/_all";
+@import "../bulma/sass/form/_all";
+@import "../bulma/sass/components/_all";
+@import "../bulma/sass/grid/_all";
+@import "../bulma/sass/layout/_all";
+
+

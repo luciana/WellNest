@@ -4,8 +4,10 @@
 
 .Search {
     display: flex;
-    align-items: center;
-
+    align-items: flex-end;
+    width:100%;
+    padding: 1rem;
+    
     .Input {
         background: $lightblue2;
         color: $dark-gray;
@@ -14,6 +16,8 @@
         padding: 1rem;
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
+        height: 62px;
+        
 
         &::placeholder {
             color: $dark-gray;
