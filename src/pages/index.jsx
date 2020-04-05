@@ -1,10 +1,14 @@
-import React, {useEffect, useState, useRef} from 'react'
+import React from 'react'
 import {Helmet} from 'react-helmet'
 import SideNav from '../components/SideNav'
 import Button from '../components/Button'
 import '../assets/styles/style.scss'
 
 import avatarImage from '../assets/images/avatar.svg'
+
+
+import Thumbnail from '../components/Thumbnail'
+import thumbnailImage from '../assets/images/thumbnails/thumb1.png'
 
 const Index = () => {
 	return (
