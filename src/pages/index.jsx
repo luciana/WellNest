@@ -10,7 +10,12 @@ import heroImage from '../assets/images/hero.jpg'
 
 import Search from '../components/Search'
 import Thumbnail from '../components/Thumbnail'
-import thumbnailImage from '../assets/images/thumbnails/thumb1.png'
+import thumbnailImage1 from '../assets/images/thumbnails/thumb1.png'
+import thumbnailImage2 from '../assets/images/thumbnails/thumb2.png'
+import thumbnailImage3 from '../assets/images/thumbnails/thumb3.png'
+import thumbnailImage4 from '../assets/images/thumbnails/thumb4.png'
+import thumbnailImage5 from '../assets/images/thumbnails/thumb5.png'
+import thumbnailImage6 from '../assets/images/thumbnails/thumb6.png'
 
 import Leaderboard from '../components/Leaderboard'
 
@@ -41,31 +46,32 @@ const Index = () => {
 					<p>You are never alone. Happy, healthy,<br /> connected Wellness with WellNest.</p>
 				</div>
 			</div>
-			<div className="video-grid">
-				<div class="level">
-					<div class=" buttons are-small" >
-						<button className="button is-info">Open Cam</button>
-						<button className="button is-info">Open Mic</button>
-						<button className="button is-info is-outlined">Join Room</button>
-						<button className="button is-info is-outlined">Hang Up</button>
+			<div className="landing-after">
+				<div className="video-grid">
+					<div class="level">
+						<div className="buttons are-small" >
+							<button className="button is-info">Open Cam</button>
+							<button className="button is-info">Open Mic</button>
+							<button className="button is-info is-outlined">Join Room</button>
+							<button className="button is-info is-outlined">Hang Up</button>
+						</div>
 					</div>
-				</div>
-				<div className="content is-ancestor is-12 is-vertical">
-					<div className="row tile is-horizontal">
-						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
-						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
-						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
-					</div>
-					<br></br>
-					<div className="row tile is-horizontal">
-						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
-						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
-						<div className="thumbnail tile"><Thumbnail image={heroImage} /></div>
-
+					<div className="content is-ancestor is-12 is-vertical">
+						<div className="row tile is-horizontal">
+							<div className="thumbnail tile"><Thumbnail image={thumbnailImage1} /></div>
+							<div className="thumbnail tile"><Thumbnail image={thumbnailImage2} /></div>
+						</div>
+						<div className="row tile is-horizontal">
+							<div className="thumbnail tile"><Thumbnail image={thumbnailImage3} /></div>
+							<div className="thumbnail tile"><Thumbnail image={thumbnailImage4} /></div>
+						</div>
+						<div className="row tile is-horizontal">
+							<div className="thumbnail tile"><Thumbnail image={thumbnailImage5} /></div>
+							<div className="thumbnail tile"><Thumbnail image={thumbnailImage6} /></div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<Leaderboard />
 		</>
 	)
 }
