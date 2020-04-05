@@ -14,6 +14,7 @@
     width: 100%;
     min-height: 100vh;
 
+
     @include until($tablet) {
         padding-left: 5rem;
     }
@@ -50,7 +51,6 @@
             margin: 2rem 0;
 
             .button {
-                min-width: 140px;
                 font-weight: 500;
                 text-transform: uppercase;
                 text-align: center;
@@ -60,10 +60,21 @@
                     margin-right: 2rem;
                 }
             }
+
+            @include from($tablet) {
+
+                //hack to work around react/bulma conflicts
+                .is-outlined,
+                .is-primary {
+                    background-color: transparent;
+                    border: none;
+                }
+            }
         }
 
         @include until($tablet) {
             .button {
+                min-width: 140px;
                 border-radius: 4px;
             }
 
@@ -74,7 +85,7 @@
 
         @include from($tablet) {
             .button {
-                min-width: 200px;
+                min-width: 220px;
                 padding: 1.5rem;
                 border-radius: 4px;
             }
@@ -94,6 +105,50 @@
 
             @include until($tablet) {
                 font-size: 1rem;
+            }
+        }
+    }
+}
+
+.landing-after {
+    width: 100%;
+    
+    .video-grid {
+        display: block;
+        background-color: $white;
+        margin: 3rem auto;
+        max-width: 1200px;
+
+        @include until($tablet) {
+            padding-left: 5rem;
+            top: 650px;
+            padding: 5px;
+            width: 320px;
+        }
+
+        @include from($tablet) {
+            padding-left: 2rem;
+            top: 950px;
+            width: 100%;
+        }
+
+        @include from($desktop) {
+            padding-left: 2rem;
+        }
+
+        .thumbnail {
+            margin: 10px;
+        }
+
+        @include from($tablet) {
+            .row {
+                width: 750px;
+            }
+        }
+
+        @include from($desktop) {
+            .row {
+                width: 90%;
             }
         }
     }

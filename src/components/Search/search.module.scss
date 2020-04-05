@@ -1,0 +1,33 @@
+@import "../../assets/styles/variables/colors.scss";
+@import "../../assets/styles/variables/fonts.scss";
+@import "../../assets/styles/variables/displays.scss";
+
+.Search {
+    display: flex;
+    align-items: flex-end;
+    width:100%;
+    padding: 1rem;
+    
+    .Input {
+        background: $lightblue2;
+        color: $dark-gray;
+        font-size: 1.1rem;
+        border: 0;
+        padding: 1rem;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        height: 62px;
+        
+
+        &::placeholder {
+            color: $dark-gray;
+        }
+    }
+
+    .Icon {
+        background: $lightblue2;
+        padding: 1rem;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+}
