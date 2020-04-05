@@ -7,15 +7,8 @@
     }
 
     @include from($tablet) {
-        background: url('../images/background/bg-screen-sml.jpg');
-        background-repeat: no-repeat;
-        background-position: top right;
-    }
-
-    @include from($widescreen) {
-        background: url('../images/background/bg-screen-crop.jpg');
+        background: url('../images/background/bg1.png');
         background-size: cover;
-        // background-position: right;
     }
 
     width: 100%;
