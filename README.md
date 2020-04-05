@@ -10,13 +10,12 @@ See http://webrtc.org for details.
 
 ## To Start
 
-% firebase use --add  
+`yarn` or `npm install`
 
-Select 'fir-rtctest-47e19'
-Enter alias as 'test'
+Create a `.env.development` file with `GATSBY_FIREBASE_PROJECT_ID = fir-rtctest-47e19`
 
-% firebase serve --only hosting
+`yarn develope` or `npm run develop`
 
-Browse to http://localhost:5000
+Browse to http://localhost:8000
 
 
