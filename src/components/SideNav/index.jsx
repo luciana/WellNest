@@ -61,13 +61,13 @@ const SideNav = ({avatar}) => {
         <div className={styles.Top}>
             <img src={avatar} alt="Avatar" className={styles.Avatar} />
             <div className={styles.Logo}>
-                <img src={logoImage} /><img src={textImage} />
+                <img src={logoImage} alt="WellNest" /><img src={textImage} alt="WellNest" />
             </div>
             <div className={styles.Nav}>
                 {items.map(({title, icon}) => (
-                    <div className={styles.Item}>
+                    <div key={title} className={styles.Item}>
                         <div className={styles.Icon}>
-                            <img src={icon} alt="Icon" />
+                            <img src={icon} alt="Navigation Link" />
                         </div>
                         <div className={styles.Text}>{title}</div>
                     </div>
@@ -75,7 +75,7 @@ const SideNav = ({avatar}) => {
             </div>
             </div>
         <div className={styles.Bottom}>
-            <div className={styles.Button} onClick={handleExpand} />
+            <div role="button" className={styles.Button} onClick={handleExpand} />
             <div className={styles.Logout}>
                 <div className={styles.Icon}>
                     <img src={logoutIcon} alt="Logout" />
