@@ -25,6 +25,7 @@
   "license": "MIT",
   "dependencies": {
     "browser-monads": "^1.0.0",
+    "dotenv": "^8.2.0",
     "firebase": "^7.13.2",
     "gatsby": "^2.18.0",
     "gatsby-plugin-manifest": "^2.2.44",
