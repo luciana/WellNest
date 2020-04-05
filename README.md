@@ -14,7 +14,7 @@ See http://webrtc.org for details.
 
 Create a `.env.development` file with `GATSBY_FIREBASE_PROJECT_ID = fir-rtctest-47e19`
 
-`yarn develope` or `npm run develop`
+`yarn develop` or `npm run develop`
 
 Browse to http://localhost:8000
 
