@@ -6,6 +6,8 @@ import '../assets/styles/style.scss'
 
 import avatarImage from '../assets/images/avatar.svg'
 
+import Leaderboard from '../components/Leaderboard'
+
 const Index = () => {
 	return (
 	<>
@@ -23,6 +25,7 @@ const Index = () => {
 				<p>You are never alone. Happy, healthy,<br/> connected Wellness with WellNest.</p>
 			</div>
 		</div>
+		<Leaderboard />
 	</>
 	)
 }
