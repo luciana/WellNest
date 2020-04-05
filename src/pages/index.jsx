@@ -8,6 +8,7 @@ import avatarImage from '../assets/images/avatar.svg'
 import heroImage from '../assets/images/hero.jpg'
 
 
+import Search from '../components/Search'
 import Thumbnail from '../components/Thumbnail'
 import thumbnailImage from '../assets/images/thumbnails/thumb1.png'
 
@@ -18,6 +19,7 @@ const Index = () => {
 				<title>WellNest</title>
 			</Helmet>
 			<SideNav avatar={avatarImage} />
+			{/* <Search /> */}
 			<div className="landing">
 				<div className="content is-hidden-mobile">
 					<h1>Happy, Healthy &<br />Inspired.</h1>
@@ -36,7 +38,7 @@ const Index = () => {
 					</div>
 					<p>You are never alone. Happy, healthy,<br /> connected Wellness with WellNest.</p>
 				</div>
-				<div className="video-grid">
+				{/* <div className="video-grid">
 					<div class="level">
 						<div class=" buttons are-small" >
 							<span className="button is-info"><Button>Open Cam</Button></span>
@@ -54,7 +56,7 @@ const Index = () => {
 						<Thumbnail className="tile" image={heroImage} />
 
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</>
 	)
